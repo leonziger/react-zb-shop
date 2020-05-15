@@ -10,11 +10,9 @@ export const Header = () => {
     <AntdHeader style={{ backgroundColor: 'gray', color: 'white', minHeight: '50px', display: 'flex'}}>
       <div className="container flex-center-center">
         <nav style={{ display: 'flex', justifyContent: 'space-between'}}>
-          <Router>
-            <NavLink exact to="/" className="headerLink">Главная</NavLink>
-            <NavLink to="/products" className="headerLink">Товары</NavLink>
-            <NavLink to="/cart" className="headerLink">Корзина</NavLink>
-          </Router>
+          <NavLink exact to="/" className="headerLink">Главная</NavLink>
+          <NavLink to="/products" className="headerLink">Товары</NavLink>
+          <NavLink to="/cart" className="headerLink">Корзина</NavLink>
         </nav>
       </div>
     </AntdHeader>
