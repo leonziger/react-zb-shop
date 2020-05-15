@@ -10,18 +10,19 @@ import { Footer} from './components/Footer/Footer';
 
 export const App = () => {
   return (
-    <Layout className="main">
-      <Header />
-      <Router>
-        <Switch>
-          <Route path="/" exact component={About} />
-          <Route path="/react-zb-shop" exact component={About} />
-          <Route path="/products" component={Main} />
-          <Route path="/cart" component={Cart} />
-          <Redirect path="/" />
-        </Switch>
-      </Router>
-      <Footer />
-    </Layout>
+    <Router>
+      <Layout className="main">
+        <Header />
+
+          <Switch>
+            <Route path="/" exact component={About} />
+            <Route path="/react-zb-shop" exact component={About} />
+            <Route path="/products" component={Main} />
+            <Route path="/cart" component={Cart} />
+          </Switch>
+
+        <Footer />
+      </Layout>
+    </Router>
   );
 };
