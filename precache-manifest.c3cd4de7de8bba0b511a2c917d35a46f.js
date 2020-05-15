@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d395ab3a8502819774e0f99c16442cda",
+    "revision": "57c566a858364b6661ede20b558d1d15",
     "url": "/react-zb-shop/index.html"
   },
   {
-    "revision": "acadf198a81811f47f7b",
+    "revision": "372909c71fc31284f550",
     "url": "/react-zb-shop/static/css/main.fe3e6cd9.chunk.css"
   },
   {
-    "revision": "89889b7492eadc292637",
-    "url": "/react-zb-shop/static/js/2.c616fc13.chunk.js"
+    "revision": "f200ba7c1f20df927af4",
+    "url": "/react-zb-shop/static/js/2.b484d38c.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/react-zb-shop/static/js/2.c616fc13.chunk.js.LICENSE.txt"
+    "url": "/react-zb-shop/static/js/2.b484d38c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "acadf198a81811f47f7b",
-    "url": "/react-zb-shop/static/js/main.eb532964.chunk.js"
+    "revision": "372909c71fc31284f550",
+    "url": "/react-zb-shop/static/js/main.fa947fe7.chunk.js"
   },
   {
     "revision": "bff347cb8382d99ba064",
