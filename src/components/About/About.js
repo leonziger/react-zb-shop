@@ -1,8 +1,8 @@
-import React from 'react';
+﻿import React from 'react';
 import { Layout} from 'antd';
 import '../../App.css';
 
-export const AboutComponent = () => {
+export const About = () => {
   return(
     <Layout className="mainContent">
       Наш замечательный сайт

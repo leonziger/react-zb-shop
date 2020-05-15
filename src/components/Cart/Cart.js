@@ -1,8 +1,8 @@
-import React from 'react';
+﻿import React from 'react';
 import { Layout} from 'antd';
 import '../../App.css';
 
-export const CartComponent = () => {
+export const Cart = () => {
   return(
     <Layout className="mainContent">
       Тут будет корзина
