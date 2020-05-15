@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { Layout } from 'antd';
 import './App.css';
 import { Header} from './components/Header/Header';
@@ -13,10 +13,13 @@ export const App = () => {
     <Layout className="main">
       <Header />
       <Router>
-        <Route path="/" exact component={About} />
-        <Route path="/react-zb-shop" exact component={About} />
-        <Route path="/products" component={Main} />
-        <Route path="/cart" component={Cart} />
+        <Switch>
+          <Route path="/" exact component={About} />
+          <Route path="/react-zb-shop" exact component={About} />
+          <Route path="/products" component={Main} />
+          <Route path="/cart" component={Cart} />
+          <Redirect path="/" />
+        </Switch>
       </Router>
       <Footer />
     </Layout>
