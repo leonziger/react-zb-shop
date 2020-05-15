@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Layout } from 'antd';
 import './App.css';
+import { HeaderComponent} from './components/HeaderComponent/HeaderComponent';
+import { AboutComponent} from './components/AboutComponent/AboutComponent';
+import { CartComponent } from './components/CartComponent/CartComponent';
+import { MainComponent} from './components/MainComponent/MainComponent';
+import { FooterComponent} from './components/FooterComponent/FooterComponent';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="main">
+      <HeaderComponent />
+      <Router>
+        <Route path="/" exact component={AboutComponent} />
+        <Route path="/products" component={MainComponent} />
+        <Route path="/cart" component={CartComponent} />
+      </Router>
+      <FooterComponent />
+    </Layout>
   );
-}
-
-export default App;
+};
