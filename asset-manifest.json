@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-zb-shop/static/css/main.fe3e6cd9.chunk.css",
-    "main.js": "/react-zb-shop/static/js/main.fa947fe7.chunk.js",
-    "main.js.map": "/react-zb-shop/static/js/main.fa947fe7.chunk.js.map",
+    "main.js": "/react-zb-shop/static/js/main.ff2262ec.chunk.js",
+    "main.js.map": "/react-zb-shop/static/js/main.ff2262ec.chunk.js.map",
     "runtime-main.js": "/react-zb-shop/static/js/runtime-main.80e0d736.js",
     "runtime-main.js.map": "/react-zb-shop/static/js/runtime-main.80e0d736.js.map",
-    "static/js/2.b484d38c.chunk.js": "/react-zb-shop/static/js/2.b484d38c.chunk.js",
-    "static/js/2.b484d38c.chunk.js.map": "/react-zb-shop/static/js/2.b484d38c.chunk.js.map",
+    "static/js/2.1f2e4273.chunk.js": "/react-zb-shop/static/js/2.1f2e4273.chunk.js",
+    "static/js/2.1f2e4273.chunk.js.map": "/react-zb-shop/static/js/2.1f2e4273.chunk.js.map",
     "index.html": "/react-zb-shop/index.html",
-    "precache-manifest.c3cd4de7de8bba0b511a2c917d35a46f.js": "/react-zb-shop/precache-manifest.c3cd4de7de8bba0b511a2c917d35a46f.js",
+    "precache-manifest.0b47ddf99ead5bb175c13cf064fcfd98.js": "/react-zb-shop/precache-manifest.0b47ddf99ead5bb175c13cf064fcfd98.js",
     "service-worker.js": "/react-zb-shop/service-worker.js",
     "static/css/main.fe3e6cd9.chunk.css.map": "/react-zb-shop/static/css/main.fe3e6cd9.chunk.css.map",
-    "static/js/2.b484d38c.chunk.js.LICENSE.txt": "/react-zb-shop/static/js/2.b484d38c.chunk.js.LICENSE.txt"
+    "static/js/2.1f2e4273.chunk.js.LICENSE.txt": "/react-zb-shop/static/js/2.1f2e4273.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.80e0d736.js",
-    "static/js/2.b484d38c.chunk.js",
+    "static/js/2.1f2e4273.chunk.js",
     "static/css/main.fe3e6cd9.chunk.css",
-    "static/js/main.fa947fe7.chunk.js"
+    "static/js/main.ff2262ec.chunk.js"
   ]
 }
