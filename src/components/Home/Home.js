@@ -4,8 +4,8 @@ import '../../App.css';
 
 export const About = () => {
   return(
-    <Layout className="mainContent">
-      Наш замечательный сайт
+    <Layout className="contentWrapper">
+      Главная странца Нашего замечательного сайта
     </Layout>
   );
 };
