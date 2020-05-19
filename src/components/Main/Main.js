@@ -6,7 +6,7 @@ import { ProductList } from './ProductList/ProductList';
 
 export const Main = () => {
   return (
-    <Layout style={{ display: 'flex', borderLeft: '1px solid gray', borderRight: '1px solid gray'}}>
+    <Layout className="contentWrapper">
       <Aside />
       <ProductList/>
     </Layout>

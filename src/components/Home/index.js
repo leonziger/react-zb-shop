@@ -1,1 +1,1 @@
-import * from './About';
+export * from './Home';

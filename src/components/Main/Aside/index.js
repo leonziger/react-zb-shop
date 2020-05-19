@@ -1,1 +1,1 @@
-import * from './Aside';
+export * from './Aside';

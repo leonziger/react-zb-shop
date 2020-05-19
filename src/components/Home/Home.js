@@ -2,7 +2,7 @@
 import { Layout} from 'antd';
 import '../../App.css';
 
-export const About = () => {
+export const Home = () => {
   return(
     <Layout className="contentWrapper">
       Главная странца Нашего замечательного сайта

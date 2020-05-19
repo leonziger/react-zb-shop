@@ -1,37 +1,35 @@
-import React, { useState } from 'react';
-import { Card as CardComponent } from 'antd';
-import ReactCardFlip from 'react-card-flip';
+import React, { useContext } from 'react';
+import { Card, Button } from 'antd';
+import { ShopContext } from '../../../ShopProvider';
 
-const { Meta } = CardComponent;
+const { Meta } = Card;
 
 export const ProductItem = ({ item }) => {
-  const [isFlipped, onUpdateFlipped] = useState(false);
+  const { cartTotal } = useContext(ShopContext);
 
-  const onClick = () => {
-    onUpdateFlipped(!isFlipped)
+  const addToCart = () => {
   };
 
   return (
-    <ReactCardFlip isFlipped={isFlipped}>
-      <CardComponent
-        key={item.id}
-        hoverable
-        style={{ width: '240px' }}
-        cover={<img alt="example" src={item.image} style={{ width: '240px', height: '300px' }} />}
-        onClick={onClick}
-      >
-        <Meta title={item.name} />
-      </CardComponent>
+    <Card
+      key={item.id}
+      hoverable
+      style={{ width: '240px', display: 'flex', alignItems: 'center', flexDirection: 'column' }}
+      cover={<img alt="example" src={item.image} style={{ width: '240px', height: '300px' }} />}
 
-      <CardComponent
-        key={item.id}
-        hoverable
-        style={{ width: '240px' }}
-        cover={<img alt="example" src={item.image} style={{ width: '240px', height: '300px' }} />}
-        onClick={onClick}
-      >
-        <Meta title="back" />
-      </CardComponent>
-    </ReactCardFlip>
+    >
+      <Meta
+        title={item.name}
+        description={item.price + ' ' + item.currency}
+        style={{ textAlign: 'center', textTransform: 'capitalize', marginBottom: '10px' }}
+      />
+      <Button
+        className="button-primary"
+        type="primary"
+        style={{ margin: '0 auto' }}
+        onClick={addToCart}>
+        Add to Cart
+      </Button>
+    </Card>
   );
 };

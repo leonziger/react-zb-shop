@@ -1,1 +1,1 @@
-import * from './Cart/;
+export * from './Cart';
