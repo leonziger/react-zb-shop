@@ -33,15 +33,10 @@
   align-items: center;
 }
 
-.headerLink {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-.headerLink:hover {
-  text-decoration: underline;
-}
-.headerLink:active {
-  color: #fff;
-  text-decoration: underline;
+.contentWrapper {
+  display: flex;
+  min-height: calc(100vh - 130px);
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 10px;
 }

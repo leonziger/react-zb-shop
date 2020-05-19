@@ -1,13 +1,14 @@
 ﻿import React from 'react';
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
-import { Layout, Menu, Breadcrumb } from 'antd';
+import { NavLink } from 'react-router-dom';
+import { Layout } from 'antd';
 import '../../App.css';
+import './Header.css';
 
 const { Header: AntdHeader } = Layout;
 
 export const Header = () => {
   return (
-    <AntdHeader style={{ backgroundColor: 'gray', color: 'white', minHeight: '50px', display: 'flex'}}>
+    <AntdHeader className="header">
       <div className="container flex-center-center">
         <nav style={{ display: 'flex', justifyContent: 'space-between'}}>
           <NavLink exact to="/" className="headerLink">Главная</NavLink>
