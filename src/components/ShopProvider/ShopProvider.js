@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 
-const emptyproduct = [
+const data = [
   {
-    id: 1,
+    id: 123,
     name: 'Шарик',
     price: 20,
     qty: 1
   },
   {
-    id: 2,
+    id: 234,
     name: 'Футболка',
     price: 50,
-    qty: 4
+    qty: 1
   },
   {
-    id: 4,
+    id: 345,
     name: 'Сердце',
     price: 30,
-    qty: 2
+    qty: 1
   },
 ];
 
@@ -25,16 +25,16 @@ export const ShopContext = React.createContext({});
 
 export const ShopProvider = ({ children }) => {
   const [ cartTotal, setCartTotal ] = useState(0);
-  const [ products, setProducts ] = useState(emptyproduct);
+  const [ cart, setCart ] = useState([...data]);
 
   const globalParams = {
     //vars
     cartTotal,
-    products,
+    cart,
 
     // functions
     setCartTotal,
-    setProducts
+    setCart
   };
 
   return (

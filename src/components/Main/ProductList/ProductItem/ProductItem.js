@@ -5,9 +5,29 @@ import { ShopContext } from '../../../ShopProvider';
 const { Meta } = Card;
 
 export const ProductItem = ({ item }) => {
-  const { cartTotal } = useContext(ShopContext);
+  const { cart, setCart } = useContext(ShopContext);
 
   const addToCart = () => {
+    let selectedProduct = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      qty: 1
+    };
+
+    let currentProductId = cart.find(product => product.id === item.id).id;
+    if (currentProductId) {
+      cart.map((product) => {
+        if (product.id === currentProductId) {
+          product.qty++;
+        }
+        return product;
+      });
+    } else {
+      cart.push(selectedProduct);
+    }
+
+    setCart(cart);
   };
 
   return (
@@ -20,7 +40,7 @@ export const ProductItem = ({ item }) => {
     >
       <Meta
         title={item.name}
-        description={item.price + ' ' + item.currency}
+        description={item.price + ' ' + 'грн.'}
         style={{ textAlign: 'center', textTransform: 'capitalize', marginBottom: '10px' }}
       />
       <Button
