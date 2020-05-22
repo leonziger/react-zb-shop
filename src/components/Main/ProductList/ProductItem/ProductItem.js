@@ -14,18 +14,22 @@ export const ProductItem = ({ item }) => {
       price: item.price,
       qty: 1
     };
+    let isCurrentProductId = false;
+    let currentProductId;
 
-    let currentProductId = cart.find(product => product.id === item.id).id;
-    if (currentProductId) {
       cart.map((product) => {
-        if (product.id === currentProductId) {
-          product.qty++;
+        if (product.id === item.id) {
+          isCurrentProductId = true;
+          currentProductId = item.id;
         }
-        return product;
+
+        return currentProductId;
       });
-    } else {
+
+    isCurrentProductId ?
+      cart.find(product => product.id === item.id).qty++
+    :
       cart.push(selectedProduct);
-    }
 
     setCart(cart);
   };
